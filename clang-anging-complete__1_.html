@@ -2621,138 +2621,184 @@
   }
 ]ct" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#0a0a0b;
-    --bg-card:#141416;
-    --bg-card2:#0f0f11;
-    --red:#e11d2e;
-    --red-deep:#b3121f;
-    --red-bar:#3a0d12;
-    --red-bar2:#2a0a0e;
-    --ink:#f2eee8;
-    --ink-soft:#b9b2a8;
-    --ink-faint:#7d766c;
-    --line:#26262a;
-    --tag-rkj:#caa45a;
-    --tag-rkj-bg:rgba(202,164,90,.14);
-    --tag-thesis:#5b9bd5;
-    --tag-thesis-bg:rgba(91,155,213,.14);
-    --tag-article:#6cc18e;
-    --tag-article-bg:rgba(108,193,142,.14);
-    --tag-case:#d98f4e;
-    --tag-case-bg:rgba(217,143,78,.14);
-    --link:#ff5b6a;
-    --fs:1;
+<style>const DATA = [
+  {
+    "pg": "43",
+    "title": "๒.๑.๑) กรณีไม่ดำเนินการตามอำนาจหน้าที่",
+    "items": [
+      {
+        "type": "case",
+        "t": "สถาบันอาหารและผู้อำนวยการสถาบันอาหารละเลยไม่ดำเนินการก่อสร้างโรงงานแปรรูปปลาและโรงงานผลิตอาหารปลา ตามโครงการพัฒนาสัตว์น้ำเศรษฐกิจตัวใหม่เพื่อการส่งออกปลาเผาะ (ปลาสวายโมง)",
+        "jump": "คำสั่งที่ ๓๘/๒๕๕๔"
+      },
+      {
+        "type": "case",
+        "t": "เจ้าหน้าที่ตำรวจประจำสถานีตำรวจภูธรบางบัวทองได้รับเรื่องร้องทุกข์ของผู้ฟ้องคดีไว้ แต่กลับไม่ดำเนินการสอบสวนจนกระทั่งผู้ต้องหาได้หลบหนีและศาลได้ออกหมายจับผู้ต้องหา",
+        "jump": "คำสั่งที่ ๕๙๘/๒๕๕๒"
+      }
+    ]
+  },
+  {
+    "pg": "45",
+    "title": "๒.๑.๓) กรณีดำเนินการตามอำนาจหน้าที่แล้ว แต่ไม่ถูกต้องหรือไม่สมบูรณ์",
+    "items": [
+      {
+        "type": "case",
+        "t": "กรุงเทพมหานครโดยสำนักการระบายน้ำได้ว่าจ้างบริษัท ร. ให้ก่อสร้างเขื่อน ค.ส.ล. และประตูระบายน้ำริมคลองลาดพร้าว ผิดไปจากรูปแบบตามสัญญาจ้างเหมาก่อสร้าง ทำให้บ้านเรือนประชาชนได้รับความเสียหาย",
+        "jump": "คำสั่งที่ ๔๕/๒๕๖๓, ที่ ๔๖/๒๕๖๓ และ ที่ ๑๑๓/๒๕๖๓"
+      },
+      {
+        "type": "case",
+        "t": "องค์การบริหารส่วนตำบลได้สำรวจและจัดเก็บรายชื่อครัวเรือนที่ประสบอุทกภัยไม่ถูกต้องครบถ้วน ทำให้รายชื่อผู้ประสบภัยตกสำรวจและไม่ได้รับความช่วยเหลือ",
+        "jump": "คำพิพากษาที่ อ. ๑๘๒/๒๕๖๐"
+      },
+      {
+        "type": "case",
+        "t": "รัฐมนตรีว่าการกระทรวงการคลัง ปลัดกระทรวงการคลังและอธิบดีกรมศุลกากรออกประกาศกระทรวงการคลังลดอัตราภาษีศุลกากรไม่ถูกต้องและไม่ครบถ้วนตามมติคณะรัฐมนตรี",
+        "jump": "คำสั่งที่ ๖๐๗/๒๕๔๗"
+      },
+      {
+        "type": "case",
+        "t": "คณะกรรมการจัดรูปที่ดินจังหวัดพิษณุโลก ออกแบบผังแปลงที่ดินพิพาทโดยมีเพียงระบบระบายน้ำเข้า แต่ไม่มีระบบระบายน้ำออกหรือคูระบายน้ำ ทำให้เกิดเหตุวิวาทกับที่ดินข้างเคียง",
+        "jump": "คำพิพากษาที่ อ.๕๐๓/๒๕๕๑"
+      }
+    ]
+  },
+  {
+    "pg": "47",
+    "title": "๓.๑.๒.๑๐ กระทำการโดยใช้ดุลพินิจโดยมิชอบ / ๒.๑.๕) กรณีไม่ดำเนินการในฐานะเป็นผู้กำกับดูแล",
+    "items": [
+      {
+        "type": "article",
+        "t": "ข้อความคิดเกี่ยวกับถ้อยคำในกฎหมายที่ไม่ตายตัว (Conceptos Juridicos Indeterminados) และความแตกต่างกับดุลพินิจของฝ่ายปกครอง",
+        "jump": "อนันต์ คงเครือพันธุ์, วารสารวิชาการศาลปกครอง, ป. ๑๗ ๑.๒ (๒๕๖๐) น. ๑"
+      },
+      {
+        "type": "article",
+        "t": "ดุลพินิจในการออกคำสั่งลงโทษทางวินัย",
+        "jump": "บวรศักดิ์ วานิช, วารสารกฎหมายปกครอง, เล่ม ๒๖, ตอน ๓ หน้า ๙๖"
+      },
+      {
+        "type": "case",
+        "t": "การเสนอผลงานทางด้านวิชาการสถาปัตยกรรมภายในเพื่อเลื่อนตำแหน่งอาจารย์ ๓ ระดับ ๔ แต่คณะกรรมการพิจารณาคัดเลือกผู้ทรงคุณวุฒิไม่ตรงสาขาโดยตรง",
+        "jump": "คำพิพากษาที่ อ. ๕๙/๒๕๔๔"
+      },
+      {
+        "type": "case",
+        "t": "การย้ายผู้ฟ้องคดีไปดำรงตำแหน่งสารวัตรสืบสวนสอบสวน สภ.ยะหริ่ง เพื่อแต่งตั้งบุคคลอื่นแทน โดยมิใช่เป็นเพราะผู้ฟ้องคดีถูกร้องเรียนพฤติกรรมไม่เหมาะสม",
+        "jump": "คำพิพากษาที่ อ. ๗๖/๕๗"
+      },
+      {
+        "type": "case",
+        "t": "นายอำเภอบางพลีละเลยไม่กำกับดูแลนายก อบต. ราชาเทวะ ที่ปล่อยให้ห้างหุ้นส่วนจำกัดประกอบกิจการกำจัดมูลฝอยก่อเหตุรำคาญแก่ประชาชนใกล้เคียง",
+        "jump": "คำพิพากษาที่ อ. ๗๙/๒๕๔๗"
+      }
+    ]
+  },
+  {
+    "pg": "48",
+    "title": "๓.๒ คดีปกครองตามมาตรา ๙ วรรคหนึ่ง (๒)",
+    "items": [
+      {
+        "type": "thesis",
+        "t": "คดีปกครองเกี่ยวกับการละเลยหรือล่าช้าในการปฏิบัติหน้าที่ของฝ่ายปกครอง",
+        "jump": "สรีรัตน์ หมวดเมือง, มหาวิทยาลัยธรรมศาสตร์ ๒๕๕๙"
+      },
+      {
+        "type": "thesis",
+        "t": "ปัญหาเงื่อนไขการฟ้องคดีปกครองเกี่ยวกับการละเลยต่อหน้าที่หรือปฏิบัติหน้าที่ล่าช้าเกินสมควร",
+        "jump": "ฐิติพร ป่านไหม, มหาวิทยาลัยธรรมศาสตร์ ๒๕๕๖"
+      },
+      {
+        "type": "thesis",
+        "t": "การละเลยหรือปฏิบัติหน้าที่ล่าช้าของเจ้าพนักงานตำรวจในกระบวนการยุติธรรมทางอาญาภายใต้เขตอำนาจศาลปกครอง",
+        "jump": "วิวัฒน์ หวังเหมรา, มหาวิทยาลัยรามคำแหง ๒๕๕๑"
+      },
+      {
+        "type": "article",
+        "t": "“ละเลยต่อหน้าที่ตามที่กฎหมายกำหนด” กับ “ละเลยต่อหน้าที่ตามที่รัฐธรรมนูญบัญญัติ: ศึกษากรณีมาตรา ๕๑ ของรัฐธรรมนูญแห่งราชอาณาจักรไทย พุทธศักราช ๒๕๖๐”",
+        "jump": "อนันต์ คงเครือพันธุ์, วารสารวิชาการศาลปกครอง, ป. ๑๘ ฉ. ๒ (๒๕๖๑), น. ๔๙"
+      }
+    ]
+  },
+  {
+    "pg": "49",
+    "title": "๓.๑) หน้าที่ตามกฎหมายที่ต้องร้องขอต่อหน่วยงานทางปกครองหรือเจ้าหน้าที่ของรัฐ / หน้าที่อื่น",
+    "items": [
+      {
+        "type": "case",
+        "t": "นายอำเภอปฏิเสธการรับจดทะเบียนสมรสให้กับบุคคลต่างด้าว (ลาวอพยพ) เนื่องจากไม่มีหลักฐานยืนยันคุณสมบัติตามเงื่อนไข",
+        "jump": "คำสั่งที่ ๖๑/๒๕๕๐"
+      },
+      {
+        "type": "case",
+        "t": "อธิการบดีสถาบันบัณฑิตพัฒนบริหารศาสตร์ คณบดีคณะนิติศาสตร์ และสภาสถาบันฯ ละเลยหน้าที่ไม่อนุมัติให้ผู้ฟ้องคดีสำเร็จการศึกษาปริญญาโท",
+        "jump": "คำสั่งที่ ๙๑๑/๒๕๕๖"
+      },
+      {
+        "type": "case",
+        "t": "สำนักงานศาลรัฐธรรมนูญและคณะกรรมการพิจารณาคัดเลือกฯ มิได้พิจารณาหรือประเมินผลงานทางวิชาการของผู้ฟ้องคดีเพื่อขอเลื่อนตำแหน่งสูงขึ้นภายในระยะเวลาที่กำหนด",
+        "jump": "คำสั่งที่ ๑๗๗/๒๕๕๔"
+      },
+      {
+        "type": "case",
+        "t": "คณบดีคณะวิทยาศาสตร์ มหาวิทยาลัยเชียงใหม่ และหัวหน้าหน่วยการเจ้าหน้าที่ ละเลยไม่ดำเนินการพิจารณาปรับเปลี่ยนตำแหน่งหลังปฏิบัติหน้าที่ครบหกเดือน",
+        "jump": "คำสั่งที่ ๔๔๔/๒๕๕๑"
+      },
+      {
+        "type": "case",
+        "t": "คณะกรรมการการเลือกตั้งและสำนักงานคณะกรรมการการเลือกตั้ง ไม่ปฏิบัติตามคำวินิจฉัยคณะกรรมการวินิจฉัยการเปิดเผยข้อมูลข่าวสารให้เปิดเผยข้อมูลเอกสารประกอบการออกคำสั่งพ้นจากตำแหน่ง",
+        "jump": "คำพิพากษาที่ อ. ๒๓๐/๒๕๕๑"
+      },
+      {
+        "type": "case",
+        "t": "กรมการขนส่งทางน้ำและพาณิชยนาวี ไม่ปฏิบัติตามมติคณะรัฐมนตรี เรื่อง การผ่อนผันให้นับเวลาที่ขอกลับเข้ารับราชการเป็นระยะเวลาการรับราชการชดใช้ทุนตามสัญญา",
+        "jump": "คำพิพากษาที่ อ. ๑๙๓/๒๕๕๐"
+      }
+    ]
+  },
+  {
+    "pg": "50",
+    "title": "๓.๑.๒.๙ กระทำการที่มีลักษณะเป็นการสร้างภาระให้เกิดกับประชาชนเกินสมควร / ๓.๑.๒.๑๐ กระทำการโดยใช้ดุลพินิจโดยมิชอบ",
+    "items": [
+      {
+        "type": "case",
+        "t": "การกระทำที่เป็นการสร้างขั้นตอนโดยไม่จำเป็นหรือสร้างภาระให้เกิดแก่ประชาชนเกินสมควร",
+        "jump": "คำพิพากษาที่ อ. ๙-๑๐/๒๕๕๘"
+      },
+      {
+        "type": "case",
+        "t": "ข้อบังคับมหาวิทยาลัยมหิดลว่าด้วยการศึกษาระดับบัณฑิตศึกษา พ.ศ. ๒๕๔๓ ในส่วนที่เกี่ยวกับข้อกำหนดให้นักศึกษาระดับบัณฑิตศึกษาที่ใช้วิทยานิพนธ์และสารนิพนธ์ โดยการเรียนการสอนการวัดผลและการสอบป้องกันวิทยานิพนธ์ใช้ภาษาไทยทั้งหมด",
+        "jump": "คำพิพากษาที่ อ. ๙/๒๕๔๖"
+      },
+      {
+        "type": "thesis",
+        "t": "การควบคุมอำนาจดุลพินิจของฝ่ายปกครองโดยศาลปกครอง",
+        "jump": "สงกรานต์ ป้องบุญจันทร์, มหาวิทยาลัยธรรมศาสตร์ ๒๕๕๕"
+      },
+      {
+        "type": "thesis",
+        "t": "ขอบเขตในการตรวจสอบการใช้ดุลพินิจของฝ่ายปกครองโดยศาลปกครอง",
+        "jump": "ธีรัญชา สระทองอุ่น, จุฬาลงกรณ์มหาวิทยาลัย ๒๕๕๐"
+      },
+      {
+        "type": "thesis",
+        "t": "ปัญหาการใช้ดุลพินิจของกระทรวงการคลังในการตรวจสอบค่าเสียหายตามพระราชบัญญัติความรับผิดทางละเมิดของเจ้าหน้าที่ พ.ศ. ๒๕๓๙",
+        "jump": "อนันต์ วงศ์นิลจันทร์, มหาวิทยาลัยธุรกิจบัณฑิตย์ ๒๕๕๗"
+      },
+      {
+        "type": "thesis",
+        "t": "การควบคุมอำนาจดุลพินิจของคณะกรรมการวินิจฉัยการเปิดเผยข้อมูลข่าวสารโดยศาลปกครองไทย",
+        "jump": "อาสาฬห์ สุกหอม, มหาวิทยาลัยธรรมศาสตร์ ๒๕๕๗"
+      },
+      {
+        "type": "thesis",
+        "t": "การควบคุมดุลพินิจในการออกคำสั่งเลื่อนระดับตำแหน่งของข้าราชการฝ่ายพลเรือนโดยศาลปกครอง",
+        "jump": "วนิดา โกงหลง, มหาวิทยาลัยธุรกิจบัณฑิตย์ ๒๕๕๖"
+      }
+    ]
   }
-  *{box-sizing:border-box;margin:0;padding:0;-webkit-user-select:text;user-select:text}
-  html{scroll-behavior:smooth}
-  body{
-    background:var(--bg);color:var(--ink);
-    font-family:'Sarabun',system-ui,sans-serif;
-    line-height:1.6;-webkit-font-smoothing:antialiased;
-    padding:0 0 6rem;
-    font-size:calc(1rem * var(--fs));
-  }
-  header{padding:1.6rem 1.4rem .8rem;max-width:1180px;margin:0 auto}
-  h1{font-size:1.9rem;font-weight:800;letter-spacing:-.01em}
-  h1 .accent{color:var(--red)}
-  .tagline{color:var(--ink-soft);font-size:.92rem;margin-top:.35rem}
-  .tagline a{color:var(--red);text-decoration:none}
-  .tagline a:hover{text-decoration:underline}
-  .bar{max-width:1180px;margin:0 auto;padding:0 1.4rem}
-  .search-wrap{position:relative;margin:1rem 0 .9rem}
-  .search-wrap svg{position:absolute;left:1rem;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--ink-faint)}
-  #search{
-    width:100%;background:var(--bg-card);border:1px solid var(--line);
-    border-radius:13px;color:var(--ink);font-family:inherit;
-    font-size:1.02rem;padding:.85rem 1rem .85rem 2.7rem;outline:none;
-    transition:border-color .15s;
-  }
-  #search:focus{border-color:var(--red)}
-  #search::placeholder{color:var(--ink-faint)}
-  .chips-row{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;padding-bottom:.9rem;border-bottom:2px solid var(--red);margin-bottom:.2rem}
-  .chip{
-    background:var(--bg-card);border:1px solid var(--line);color:var(--ink-soft);
-    font-family:inherit;font-size:.92rem;font-weight:600;
-    padding:.5rem 1.05rem;border-radius:24px;cursor:pointer;white-space:nowrap;
-    transition:all .13s;
-  }
-  .chip:hover{border-color:var(--red);color:var(--ink)}
-  .chip.active{background:var(--red);border-color:var(--red);color:#fff}
-  .size-ctl{margin-left:auto;display:flex;align-items:center;gap:.5rem}
-  .size-ctl .lbl{color:var(--ink-faint);font-size:.88rem}
-  .size-btn{
-    background:#1c1c1f;border:1px solid var(--line);color:#fff;
-    width:42px;height:38px;border-radius:9px;cursor:pointer;
-    font-family:inherit;font-size:1rem;font-weight:700;
-  }
-  .size-btn:hover{background:var(--red);border-color:var(--red)}
-  .count{max-width:1180px;margin:0 auto;padding:.9rem 1.4rem .2rem;color:var(--ink-soft);font-size:.92rem}
-  .count b{color:#fff}
-  main{max-width:1180px;margin:0 auto;padding:.4rem 1.4rem 0}
-  .group{margin-top:1.4rem;scroll-margin-top:1rem}
-  .group-bar{
-    background:linear-gradient(180deg,var(--red-bar),var(--red-bar2));
-    border:1px solid #4a1118;border-radius:12px 12px 0 0;
-    border-bottom:none;
-    padding:.85rem 1.1rem;display:flex;align-items:center;gap:.85rem;
-  }
-  .pg-pill{
-    background:#0c0c0d;border:1px solid #5a151d;color:#fff;
-    font-weight:700;font-size:.82rem;padding:.22rem .7rem;border-radius:7px;
-    white-space:nowrap;flex-shrink:0;
-  }
-  .group-title{color:#ff8b95;font-weight:800;font-size:1.04rem}
-  .group-body{background:var(--bg-card);border:1px solid #4a1118;border-top:none;border-radius:0 0 12px 12px;padding:.9rem 1.1rem}
-  .item{padding:.7rem 0;border-bottom:1px solid var(--line);display:flex;align-items:stretch;gap:.8rem;transition:opacity .15s}
-  .item:last-child{border-bottom:none}
-  .item.hidden{display:none}
-  .item-main{flex:1;min-width:0}
-  .item-text{color:var(--ink);font-size:.98rem;line-height:1.5;margin-bottom:.4rem}
-  .item-text .tag{
-    display:inline-block;font-size:.75rem;font-weight:700;padding:.25rem .6rem;border-radius:4px;margin-right:.5rem;
-  }
-  .tag.rkj{background:var(--tag-rkj-bg);color:var(--tag-rkj)}
-  .tag.thesis{background:var(--tag-thesis-bg);color:var(--tag-thesis)}
-  .tag.article{background:var(--tag-article-bg);color:var(--tag-article)}
-  .tag.case{background:var(--tag-case-bg);color:var(--tag-case)}
-  .tag.research{background:var(--tag-case-bg);color:var(--tag-case)}
-  mark{background:#4a1118;color:var(--tag-rkj);font-weight:700}
-  .cite{color:var(--ink-soft);font-size:.9rem;font-style:italic}
-  .cite.warn{color:#f79c73}
-  .actions{display:flex;flex-direction:column;gap:.4rem;justify-content:flex-start}
-  .srch{
-    background:var(--red);color:#fff;text-decoration:none;font-size:.8rem;font-weight:600;
-    padding:.3rem .65rem;border-radius:5px;white-space:nowrap;text-align:center;
-    transition:background .15s;
-  }
-  .srch:hover{background:var(--red-deep)}
-  .copy-btn{
-    background:#26262a;color:var(--tag-rkj);border:1px solid #3a3a3e;
-    padding:.3rem .55rem;border-radius:4px;font-size:.75rem;cursor:pointer;
-    font-family:inherit;font-weight:600;transition:all .15s;
-  }
-  .copy-btn:hover,.copy-btn:active{background:#3a3a3e;border-color:var(--tag-rkj)}
-  .copy-btn.copied{background:#4a1118;color:#ff8b95}
-  #pending{
-    max-width:1180px;margin:2rem auto 0;padding:1.4rem;
-    background:var(--bg-card);border:1px solid var(--line);border-radius:10px;
-    font-size:.9rem;color:var(--ink-soft);line-height:1.6;
-  }
-  #pending b{color:var(--tag-rkj)}
-  #noResults{
-    display:none;max-width:1180px;margin:2rem auto;padding:2rem 1.4rem;
-    background:var(--bg-card);border:1px solid var(--line);border-radius:10px;
-    text-align:center;color:var(--ink-soft);font-size:1.05rem;
-  }
-  #noResults.show{display:block}
-  @media(max-width:600px){
-    h1{font-size:1.4rem}
-    .item{flex-direction:column;gap:.4rem}
-    .item-text{font-size:.95rem}
-    .actions{flex-direction:row;flex-wrap:wrap}
-  }
+];
 </style>
 </head>
 <body>
